@@ -15,7 +15,7 @@ BuildRequires:	automake
 BuildRequires:	libstdc++-devel
 BuildRequires:	libtool
 BuildRequires:	libxml2-devel >= 2.5.8
-Obsoletes:	libxml++ <= 2.0.0
+Obsoletes:	libxml++ < 2.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,9 +28,10 @@ libxml++ jest interfejsem C++ do biblioteki libxml.
 Summary:	Header files for libxml++
 Summary(pl):	Pliki nag³ówkowe do libxml++
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
 Requires:	libxml2-devel
+Obsoletes:	libxml++-devel < 2.0.0
 
 %description devel
 Header files for libxml++.
@@ -42,7 +43,8 @@ Pliki nag³ówkowe do libxml++.
 Summary:	Static libxml++ libraries
 Summary(pl):	Biblioteka statyczna libxml++
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
+Obsoletes:	libxml++-static < 2.0.0
 
 %description static
 Static libxml++ libraries.
