@@ -1,7 +1,7 @@
 
 %define		_realname	libxml++
 Summary:	C++ interface for working with XML files
-Summary(pl):	Interfejs C++ do pracy z plikami XML
+Summary(pl.UTF-8):   Interfejs C++ do pracy z plikami XML
 Name:		libxml++1
 Version:	1.0.5
 Release:	1
@@ -22,12 +22,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 libxml++ is a C++ interface for the libxml XML parser library.
 
-%description -l pl
+%description -l pl.UTF-8
 libxml++ jest interfejsem C++ do biblioteki libxml.
 
 %package devel
 Summary:	Header files for libxml++
-Summary(pl):	Pliki nag≥Ûwkowe do libxml++
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe do libxml++
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -37,12 +37,12 @@ Obsoletes:	libxml++-devel < 2.0.0
 %description devel
 Header files for libxml++.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe do libxml++.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe do libxml++.
 
 %package static
 Summary:	Static libxml++ libraries
-Summary(pl):	Biblioteka statyczna libxml++
+Summary(pl.UTF-8):   Biblioteka statyczna libxml++
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Obsoletes:	libxml++-static < 2.0.0
@@ -50,7 +50,7 @@ Obsoletes:	libxml++-static < 2.0.0
 %description static
 Static libxml++ libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Biblioteka statyczna libxml++.
 
 %prep
